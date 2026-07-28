@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ToolGuard — Field Operations for Construction | NextGen AI LLC</title>
+<meta name="description" content="ToolGuard by NextGen AI LLC. Scan a QR code on the machine or reply to a scheduled text. Equipment inspections, service requests, daily JHAs, and hot work permits submitted in under a minute. No app, no login.">
+<meta property="og:title" content="ToolGuard — Scan the iron. Text the crew.">
+<meta property="og:description" content="Two ways in: a QR code attached to a machine, and a scheduled text attached to a crew and a day. Inspections, service requests, JHAs, and hot work permits in under a minute.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://michaelai1.github.io/NEXTGENAI/toolguard/">
+<link rel="stylesheet" href="../assets/site.css">
+<script src="../assets/site.js"></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<site-header page="toolguard"></site-header>
+<noscript>
+  <nav class="wrap" style="padding-block:1rem" aria-label="Primary">
+    <a href="../">Home</a> &middot;
+    <a href="../toolguard/">Field Operations</a> &middot;
+    <a href="../ai/">Custom AI</a> &middot;
+    <a href="tel:+13172002112">317-200-2112</a>
+  </nav>
+</noscript>
+
+<main id="main">
+
+  <!-- ============================================================= HERO -->
+  <section class="wrap hero-tg">
+    <div class="hero-tg-grid">
+      <div>
+        <p class="brandline">
+          <span class="lbl lbl--y">ToolGuard</span>
+          <span class="pd" aria-hidden="true"></span>
+          <span class="lbl">A product of NextGen AI LLC</span>
+        </p>
+
+        <h1 class="h-xl">One scan.<br>Clean request.<br>Shop notified.</h1>
+
+        <p class="lead">
+          Field operations built on two things your crews already carry: the phone in their pocket
+          and thirty seconds. Inspections, service requests, transport moves, daily JHAs, and hot
+          work permits — submitted from the machine or answered by text.
+        </p>
+
+        <div class="btn-row" style="margin-top:1.75rem">
+          <a class="btn btn--y" href="tel:+13172002112">Book a 12-minute demo</a>
+          <a class="btn btn--o" href="#roi">See the ROI models</a>
+        </div>
+
+        <p class="trust">
+          <span>No app download</span>
+          <span>Works on any phone</span>
+          <span>Fast rollout</span>
+        </p>
+      </div>
+
+      <!-- tabbed workflow mockups -->
+      <div class="plate plate--rivet" data-mocks>
+        <div class="mock-tabs" role="tablist" aria-label="Workflow examples">
+          <button class="mock-tab" type="button" role="tab" id="mt-1" aria-controls="mp-1" aria-selected="true"  tabindex="0">QR scan</button>
+          <button class="mock-tab" type="button" role="tab" id="mt-2" aria-controls="mp-2" aria-selected="false" tabindex="-1">Daily JHA</button>
+          <button class="mock-tab" type="button" role="tab" id="mt-3" aria-controls="mp-3" aria-selected="false" tabindex="-1">Service</button>
+          <button class="mock-tab" type="button" role="tab" id="mt-4" aria-controls="mp-4" aria-selected="false" tabindex="-1">Hot work</button>
+        </div>
+
+        <div class="mock-panel" id="mp-1" role="tabpanel" aria-labelledby="mt-1">
+          <div class="kv"><span class="k">ASSET</span><span class="v">EX-12 &middot; CAT 336</span></div>
+          <div class="kv"><span class="k">SERIAL</span><span class="v">SN 0KX00512</span></div>
+          <p class="mock-title">Pre-trip inspection &middot; shift start</p>
+          <ul class="checks">
+            <li><span class="bx" aria-hidden="true"></span> Fluids and leaks</li>
+            <li><span class="bx bx--no" aria-hidden="true"></span> Hydraulic line — photo required</li>
+            <li><span class="bx" aria-hidden="true"></span> Tires and glass</li>
+          </ul>
+          <p class="mock-foot">Synced to asset record &middot; shop notified automatically</p>
+        </div>
+
+        <div class="mock-panel" id="mp-2" role="tabpanel" aria-labelledby="mt-2" hidden>
+          <div class="kv"><span class="k">CREW</span><span class="v">Crew 3 &middot; 6 on site</span></div>
+          <div class="kv"><span class="k">JOB SITE</span><span class="v">The Vue &middot; Lot B</span></div>
+          <p class="mock-title">Daily JHA &middot; 6:45 AM text</p>
+          <ul class="checks">
+            <li><span class="bx" aria-hidden="true"></span> Trenching over 5 ft — shoring in place</li>
+            <li><span class="bx" aria-hidden="true"></span> Overhead lines identified and flagged</li>
+            <li><span class="bx" aria-hidden="true"></span> Foreman signed off</li>
+          </ul>
+          <p class="mock-foot">Captured 6:52 AM &middot; tied to crew and job site</p>
+        </div>
+
+        <div class="mock-panel" id="mp-3" role="tabpanel" aria-labelledby="mt-3" hidden>
+          <div class="kv"><span class="k">ASSET</span><span class="v">SK-07 &middot; Bobcat S650</span></div>
+          <div class="kv"><span class="k">STATUS</span><span class="v no">OPEN</span></div>
+          <p class="mock-title">Hydraulic leak — left boom cylinder</p>
+          <ul class="checks">
+            <li><span class="bx" aria-hidden="true"></span> Submitted by J. Torres &middot; 7:42 AM</li>
+            <li><span class="bx" aria-hidden="true"></span> Photo attached from the machine</li>
+            <li><span class="bx" aria-hidden="true"></span> Assigned to shop &middot; parts staged</li>
+          </ul>
+          <p class="mock-foot">Asset ID and photo arrive together &middot; no phone tag</p>
+        </div>
+
+        <div class="mock-panel" id="mp-4" role="tabpanel" aria-labelledby="mt-4" hidden>
+          <div class="kv"><span class="k">PERMIT</span><span class="v">HW-0418</span></div>
+          <div class="kv"><span class="k">WINDOW</span><span class="v">09:00 &ndash; 15:00</span></div>
+          <p class="mock-title">Hot work permit &middot; cutting and welding</p>
+          <ul class="checks">
+            <li><span class="bx" aria-hidden="true"></span> Fire watch assigned &middot; R. Delgado</li>
+            <li><span class="bx" aria-hidden="true"></span> Extinguisher on site and charged</li>
+            <li><span class="bx" aria-hidden="true"></span> Area cleared to 35 ft</li>
+          </ul>
+          <p class="mock-foot">Timestamped record &middot; delivered to the safety director</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="hazard" role="presentation"></div>
+
+  <!-- ================================================= THE TWO CHANNELS -->
+  <section class="sec" id="channels" style="border-top:0">
+    <div class="wrap">
+      <div class="sec-hd">
+        <p class="lbl">Two ways in</p>
+        <h2 class="h-l">Scan the iron. Text the crew.</h2>
+        <p class="lead">
+          Two intake channels, split by what they attach to. One is bolted to a machine. The other
+          arrives on a phone at 6:45 in the morning. Crews use whichever fits the job in front of them.
+        </p>
+      </div>
+
+      <div class="channels">
+
+        <!-- QR -->
+        <article class="chan plate plate--rivet">
+          <div class="plate-hd">
+            <span class="lbl">Channel 01</span>
+            <span class="lbl lbl--y">QR</span>
+          </div>
+          <div class="plate-bd">
+            <h3 class="chan-name">Attached to<br>a machine</h3>
+            <p class="chan-what">One code per asset, tied to the serial number</p>
+            <p class="chan-desc">
+              The code lives on the machine. A crew member scans it and the form opens already
+              knowing which unit they are standing next to — no wrong packet on the hood, no
+              guessing at a serial number.
+            </p>
+            <ul class="chan-list">
+              <li><span class="ix">01</span> Equipment inspections</li>
+              <li><span class="ix">02</span> Service and maintenance requests</li>
+              <li><span class="ix">03</span> Transport and move requests</li>
+              <li><span class="ix">04</span> Daily logs and hour tracking</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- TEXT -->
+        <article class="chan plate plate--rivet">
+          <div class="plate-hd">
+            <span class="lbl">Channel 02</span>
+            <span class="lbl lbl--y">Text</span>
+          </div>
+          <div class="plate-bd">
+            <h3 class="chan-name">Attached to a<br>crew and a day</h3>
+            <p class="chan-what">No code to scan, no app, no login</p>
+            <p class="chan-desc">
+              A scheduled text goes out and the crew replies. Nothing to install and nothing to
+              remember — the form comes to them at the hour it is supposed to happen, which is
+              why it actually gets done.
+            </p>
+            <ul class="chan-list">
+              <li><span class="ix">01</span> Daily JHA (Job Hazard Analysis)</li>
+              <li><span class="ix">02</span> Hot work permits</li>
+              <li><span class="ix">03</span> Toolbox talks</li>
+              <li><span class="ix">04</span> Daily safety sign-off</li>
+              <li><span class="ix">05</span> Tool and asset lookup</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================================================== HOW IT WORKS -->
+  <section class="sec sec--alt" id="how">
+    <div class="wrap">
+      <div class="sec-hd">
+        <p class="lbl">How it works</p>
+        <h2 class="h-l">Three steps.</h2>
+        <p class="lead">
+          No app to download. No training required. A crew either scans the code on the machine or
+          replies to the text that just came in — the office and shop see it immediately.
+        </p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <p class="step-n">STEP 01</p>
+          <h3>Scan a code, or reply to a text</h3>
+          <p>
+            Either entry point works from any smartphone with no app and no login. Scanning opens
+            a form already loaded with the asset ID. Replying to the scheduled text opens the form
+            already tied to that crew and that day.
+          </p>
+        </div>
+        <div class="step">
+          <p class="step-n">STEP 02</p>
+          <h3>Submit it with photos</h3>
+          <p>
+            Pick the type — inspection, service, transport, daily log, JHA, hot work permit, toolbox
+            talk. Add required photos and a description. Hit submit. Done in under a minute.
+          </p>
+        </div>
+        <div class="step">
+          <p class="step-n">STEP 03</p>
+          <h3>One queue, tracked status</h3>
+          <p>
+            Everything lands in a single dashboard for the office and shop. Asset ID, crew, job site,
+            location, photos, and status tracking all in one place. Can connect to your existing software.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================== SAFETY RECORDS -->
+  <section class="sec" id="safety">
+    <div class="wrap">
+      <div class="sec-hd">
+        <p class="lbl">Safety records</p>
+        <h2 class="h-l">Capture and delivery.</h2>
+        <p class="lead">
+          A daily JHA and a hot work permit are records. The problem with paper is not that crews
+          refuse to fill it out — it is that the sheet lives in a truck for three weeks. ToolGuard
+          captures the record when it happens and delivers it to whoever needs it.
+        </p>
+      </div>
+
+      <div class="safety-grid">
+
+        <div class="record">
+          <div class="plate plate--rivet">
+            <div class="plate-hd"><span class="lbl">Record</span><span class="lbl lbl--y">Captured</span></div>
+            <div class="plate-bd">
+              <div class="kv"><span class="k">FORM</span><span class="v">JHA-2214</span></div>
+              <div class="kv"><span class="k">SUBMITTED</span><span class="v">06:52:14</span></div>
+              <div class="kv"><span class="k">CREW</span><span class="v">Crew 3</span></div>
+              <div class="kv"><span class="k">JOB SITE</span><span class="v">The Vue &middot; Lot B</span></div>
+            </div>
+          </div>
+          <p class="small muted">
+            Every submission is timestamped and tied to a crew and a job site at the moment it is
+            filled out, not reconstructed later from memory.
+          </p>
+        </div>
+
+        <div class="record">
+          <div class="plate plate--rivet">
+            <div class="plate-hd"><span class="lbl">Delivery</span><span class="lbl lbl--y">Routed</span></div>
+            <div class="plate-bd">
+              <div class="kv"><span class="k">SAFETY DIR.</span><span class="v ok">EMAILED</span></div>
+              <div class="kv"><span class="k">PROJECT MGR</span><span class="v ok">EMAILED</span></div>
+              <div class="kv"><span class="k">FORMAT</span><span class="v">PDF</span></div>
+              <div class="kv"><span class="k">PAPER</span><span class="v">NONE</span></div>
+            </div>
+          </div>
+          <p class="small muted">
+            Formatted and sent automatically to the people who need it. Greiner Brothers runs their
+            inspection reports out to their safety director this way.
+          </p>
+        </div>
+
+        <div class="record">
+          <div class="plate plate--rivet">
+            <div class="plate-hd"><span class="lbl">Retrieval</span><span class="lbl lbl--y">On file</span></div>
+            <div class="plate-bd">
+              <div class="kv"><span class="k">BY CREW</span><span class="v ok">INDEXED</span></div>
+              <div class="kv"><span class="k">BY JOB SITE</span><span class="v ok">INDEXED</span></div>
+              <div class="kv"><span class="k">BY DATE</span><span class="v ok">INDEXED</span></div>
+              <div class="kv"><span class="k">BY FORM TYPE</span><span class="v ok">INDEXED</span></div>
+            </div>
+          </div>
+          <p class="small muted">
+            When someone asks for six weeks of JHAs on a specific job site, you pull them instead
+            of going through truck cabs.
+          </p>
+        </div>
+
+      </div>
+
+      <p class="disclaimer" style="margin-top:2rem">
+        ToolGuard captures and delivers records. It does not determine what your obligations are,
+        and using it does not by itself make an operation compliant with any standard, regulation,
+        or policy. Nothing here is legal, safety, or insurance advice.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================================ STATS -->
+  <section class="sec sec--tight sec--alt">
+    <div class="wrap">
+      <div class="stats">
+        <div class="stat">
+          <p class="stat-v">&lt;60s</p>
+          <p class="stat-l">Scan to submitted request</p>
+        </div>
+        <div class="stat">
+          <p class="stat-v">No app</p>
+          <p class="stat-l">Works on any phone</p>
+        </div>
+        <div class="stat">
+          <p class="stat-v">Two ways in</p>
+          <p class="stat-l">QR on the machine, text to the crew</p>
+        </div>
+        <div class="stat">
+          <p class="stat-v">One queue</p>
+          <p class="stat-l">Office and shop see the same thing</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================== CALCULATORS -->
+  <section class="sec" id="roi">
+    <div class="wrap">
+      <div class="sec-hd">
+        <p class="lbl">Calculators</p>
+        <h2 class="h-l">What&rsquo;s your fleet leaving on the table?</h2>
+        <p class="lead">
+          Pick a workflow and enter your numbers. Conservative math, transparent enough to check
+          yourself. We run the total with you on a call so you can see every line.
+        </p>
+      </div>
+
+      <calc-suite></calc-suite>
+
+      <p class="small muted" style="margin-top:2rem">
+        Want all four models on one page? <a href="roi/">Open the ROI workbook</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- =========================================================== DEMOS -->
+  <section class="sec sec--alt" id="demos">
+    <div class="wrap">
+      <div class="sec-hd">
+        <p class="lbl">Interactive demos</p>
+        <h2 class="h-l">Try it before you commit.</h2>
+        <p class="lead">
+          Live prototypes. Open either one on your phone right now and see what your crew would see.
+        </p>
+      </div>
+
+      <div class="demos">
+        <article class="demo plate plate--rivet">
+          <div class="plate-hd"><span class="lbl">Demo 01</span><span class="lbl lbl--y">Live</span></div>
+          <div class="plate-bd">
+            <h3>Ops Command</h3>
+            <p>Asset tracking, scheduling and crew dispatch in one dashboard.</p>
+            <ul>
+              <li>Real-time inventory</li>
+              <li>Broken tool history</li>
+              <li>Drag-and-drop scheduling</li>
+              <li>iPad compatible</li>
+            </ul>
+            <a class="btn btn--o" href="https://michaelai1.github.io/nextgen-ops-dashboard/" target="_blank" rel="noopener">Open demo</a>
+          </div>
+        </article>
+
+        <article class="demo plate plate--rivet">
+          <div class="plate-hd"><span class="lbl">Demo 02</span><span class="lbl lbl--y">Live</span></div>
+          <div class="plate-bd">
+            <h3>QR Code Access</h3>
+            <p>
+              One QR code on any piece of equipment. Crews scan and submit maintenance requests,
+              transport moves, inspections, and daily logs in under 60 seconds.
+            </p>
+            <ul>
+              <li>No app download or login required</li>
+              <li>Submissions include photo, location, and timestamp</li>
+              <li>Everything lands in one queue for the office</li>
+            </ul>
+            <a class="btn btn--o" href="https://michaelai1.github.io/equipment-qr-demo/" target="_blank" rel="noopener">Open demo</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================== TEXT THREAD -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="thread-grid">
+        <div>
+          <p class="lbl">Channel 02 &nbsp;/&nbsp; in practice</p>
+          <h2 class="h-l" style="margin-block:.75rem 1rem">The form comes<br>to them.</h2>
+          <p class="lead">
+            The JHA text goes out at 6:45, before the crew is in the hole. The foreman answers it
+            standing in the parking lot. The same thread handles tool and asset lookup the rest of
+            the day, because crews already know how to text.
+          </p>
+          <div class="btn-row" style="margin-top:1.75rem">
+            <a class="btn btn--y" href="tel:+13172002112">See it on your fleet</a>
+          </div>
+        </div>
+
+        <div class="phone-col">
+          <div class="phone" data-thread>
+            <div class="phone-bar"><span>6:45</span><span>ToolGuard</span></div>
+            <div class="thread">
+              <p class="bub bub--in">Crew 3 daily JHA — The Vue, Lot B. Reply <span class="mono">1</span> to start.</p>
+              <p class="bub bub--out">1</p>
+              <p class="bub bub--in">Trenching over 5 ft today? <span class="mono">Y/N</span></p>
+              <p class="bub bub--out">Y — shoring set</p>
+              <p class="bub bub--in">Overhead lines identified and flagged? <span class="mono">Y/N</span></p>
+              <p class="bub bub--out">Y</p>
+              <p class="bub bub--in">Logged 6:52 AM. Sent to safety director. Have a good one.</p>
+              <p class="bub bub--out">Where&rsquo;s the 20ft ladder?</p>
+              <p class="bub bub--in">At the shop. Last scanned Friday 4:10 PM.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================== CONTACT -->
+  <section class="sec sec--alt contact-band">
+    <div class="wrap">
+      <div class="plate plate--rivet">
+        <div class="plate-hd">
+          <span class="lbl">Contact</span>
+          <span class="lbl lbl--y">Direct line</span>
+        </div>
+        <div class="plate-bd">
+          <h2 class="h-l">Your shop shouldn&rsquo;t find out about breakdowns from a phone call.</h2>
+          <p class="contact-lines">
+            Michael Carey &middot; NextGen AI LLC<br>
+            Bloomington, Indiana<br>
+            <a href="tel:+13172002112">317-200-2112</a><br>
+            <a href="mailto:Michaelcareyai@gmail.com">Michaelcareyai@gmail.com</a>
+          </p>
+          <div class="btn-row">
+            <a class="btn btn--y" href="tel:+13172002112">Call 317-200-2112</a>
+            <a class="btn btn--o" href="mailto:Michaelcareyai@gmail.com?subject=ToolGuard%20demo">Book a 12-minute demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<site-footer></site-footer>
+
+</body>
+</html>
