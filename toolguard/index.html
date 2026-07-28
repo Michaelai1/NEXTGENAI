@@ -141,7 +141,14 @@
             <span class="lbl lbl--y">QR</span>
           </div>
           <div class="plate-bd">
-            <h3 class="chan-name">Attached to<br>a machine</h3>
+            <div class="chan-top">
+              <h3 class="chan-name">Attached to<br>a machine</h3>
+              <svg class="chan-glyph chan-qr" viewBox="0 0 21 21" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M0 0h7v7H0zM1 1v5h5V1zM14 0h7v7h-7zM15 1v5h5V1zM0 14h7v7H0zM1 15v5h5v-5z"/>
+                <path d="M2 2h3v3H2zM16 2h3v3h-3zM2 16h3v3H2z"/>
+                <path d="M8 6h1v1H8zM10 6h1v1h-1zM12 6h1v1h-1zM6 8h1v1H6zM6 10h1v1H6zM6 12h1v1H6zM9 1h1v1H9zM11 0h1v1h-1zM8 2h1v2H8zM10 3h2v1h-2zM9 5h1v1H9zM11 4h1v3h-1zM8 8h2v1H8zM12 8h1v1h-1zM1 9h1v1H1zM3 8h1v2H3zM5 9h2v1H5zM8 9h1v1H8zM13 9h1v1h-1zM15 9h2v1h-2zM19 9h1v1h-1zM2 10h2v1H2zM9 10h1v1H9zM11 10h1v1h-1zM14 10h1v1h-1zM16 10h1v1h-1zM20 10h1v1h-1zM0 11h1v1H0zM3 11h1v1H3zM6 11h1v1H6zM10 11h1v1h-1zM13 11h1v1h-1zM18 11h2v1h-2zM1 12h1v1H1zM5 12h1v1H5zM8 12h1v1H8zM11 12h1v1h-1zM15 12h1v1h-1zM19 12h1v1h-1zM9 13h1v1H9zM12 13h1v1h-1zM16 13h2v1h-2zM20 13h1v1h-1zM9 14h1v1H9zM14 14h1v1h-1zM17 14h1v1h-1zM9 15h1v1H9zM11 15h1v1h-1zM19 15h1v1h-1zM8 16h1v1H8zM13 16h1v1h-1zM15 16h1v1h-1zM10 17h1v1h-1zM12 17h1v1h-1zM16 17h1v1h-1zM18 17h1v1h-1zM9 18h1v1H9zM13 18h1v1h-1zM15 19h1v1h-1zM17 19h2v1h-2zM20 19h1v1h-1zM8 20h1v1H8zM11 20h1v1h-1zM14 20h1v1h-1zM19 20h1v1h-1z"/>
+              </svg>
+            </div>
             <p class="chan-what">One code per asset, tied to the serial number</p>
             <p class="chan-desc">
               The code lives on the machine. A crew member scans it and the form opens already
@@ -164,7 +171,13 @@
             <span class="lbl lbl--y">Text</span>
           </div>
           <div class="plate-bd">
-            <h3 class="chan-name">Attached to a<br>crew and a day</h3>
+            <div class="chan-top">
+              <h3 class="chan-name">Attached to a<br>crew and a day</h3>
+              <svg class="chan-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+                <path d="M3.5 4.5h17v11.5H9.5l-4.5 4v-4h-1.5z" stroke-linejoin="round"/>
+                <path d="M7.5 8.75h9M7.5 11.75h5.5" stroke-linecap="round"/>
+              </svg>
+            </div>
             <p class="chan-what">No code to scan, no app, no login</p>
             <p class="chan-desc">
               A scheduled text goes out and the crew replies. Nothing to install and nothing to
@@ -232,63 +245,43 @@
     <div class="wrap">
       <div class="sec-hd">
         <p class="lbl">Safety records</p>
-        <h2 class="h-l">Capture and delivery.</h2>
+        <h2 class="h-l">The paperwork handles itself.</h2>
         <p class="lead">
-          A daily JHA and a hot work permit are records. The problem with paper is not that crews
-          refuse to fill it out — it is that the sheet lives in a truck for three weeks. ToolGuard
-          captures the record when it happens and delivers it to whoever needs it.
+          Every inspection, daily JHA, and hot work permit that comes in from the field lands in
+          two places. No paper riding around in trucks.
         </p>
       </div>
 
-      <div class="safety-grid">
+      <div class="channels">
 
-        <div class="record">
-          <div class="plate plate--rivet">
-            <div class="plate-hd"><span class="lbl">Record</span><span class="lbl lbl--y">Captured</span></div>
-            <div class="plate-bd">
-              <div class="kv"><span class="k">FORM</span><span class="v">JHA-2214</span></div>
-              <div class="kv"><span class="k">SUBMITTED</span><span class="v">06:52:14</span></div>
-              <div class="kv"><span class="k">CREW</span><span class="v">Crew 3</span></div>
-              <div class="kv"><span class="k">JOB SITE</span><span class="v">The Vue &middot; Lot B</span></div>
-            </div>
+        <article class="chan plate plate--rivet">
+          <div class="plate-hd">
+            <span class="lbl">Output 01</span>
+            <span class="lbl lbl--y">Dashboard</span>
           </div>
-          <p class="small muted">
-            Every submission is timestamped and tied to a crew and a job site at the moment it is
-            filled out, not reconstructed later from memory.
-          </p>
-        </div>
+          <div class="plate-bd">
+            <h3 class="chan-name">Custom dashboard<br>of PDFs</h3>
+            <p class="chan-desc">
+              Every submission becomes a formatted PDF on one dashboard — timestamped, tied to a
+              crew and job site, and searchable when someone asks for six weeks of JHAs on a
+              specific project.
+            </p>
+          </div>
+        </article>
 
-        <div class="record">
-          <div class="plate plate--rivet">
-            <div class="plate-hd"><span class="lbl">Delivery</span><span class="lbl lbl--y">Routed</span></div>
-            <div class="plate-bd">
-              <div class="kv"><span class="k">OUTPUT</span><span class="v">PDF</span></div>
-              <div class="kv"><span class="k">DASHBOARD</span><span class="v ok">POSTED</span></div>
-              <div class="kv"><span class="k">AUTO-EMAIL</span><span class="v ok">GM &middot; SAFETY DIR.</span></div>
-              <div class="kv"><span class="k">PAPER</span><span class="v">NONE</span></div>
-            </div>
+        <article class="chan plate plate--rivet">
+          <div class="plate-hd">
+            <span class="lbl">Output 02</span>
+            <span class="lbl lbl--y">Auto-email</span>
           </div>
-          <p class="small muted">
-            Every record lands as a PDF on the dashboard and is auto-emailed to the GM or anyone
-            internal who wants it. Greiner Brothers runs their inspection reports this way.
-          </p>
-        </div>
-
-        <div class="record">
-          <div class="plate plate--rivet">
-            <div class="plate-hd"><span class="lbl">Retrieval</span><span class="lbl lbl--y">On file</span></div>
-            <div class="plate-bd">
-              <div class="kv"><span class="k">BY CREW</span><span class="v ok">INDEXED</span></div>
-              <div class="kv"><span class="k">BY JOB SITE</span><span class="v ok">INDEXED</span></div>
-              <div class="kv"><span class="k">BY DATE</span><span class="v ok">INDEXED</span></div>
-              <div class="kv"><span class="k">BY FORM TYPE</span><span class="v ok">INDEXED</span></div>
-            </div>
+          <div class="plate-bd">
+            <h3 class="chan-name">Emailed to whoever<br>needs it</h3>
+            <p class="chan-desc">
+              The moment a form is submitted, the PDF goes out automatically — to your GM, your
+              subs, or the safety company that keeps your program. Nobody forwards anything.
+            </p>
           </div>
-          <p class="small muted">
-            When someone asks for six weeks of JHAs on a specific job site, you pull them instead
-            of going through truck cabs.
-          </p>
-        </div>
+        </article>
 
       </div>
     </div>
@@ -334,56 +327,8 @@
     </div>
   </section>
 
-  <!-- =========================================================== DEMOS -->
-  <section class="sec sec--alt" id="demos">
-    <div class="wrap">
-      <div class="sec-hd">
-        <p class="lbl">Interactive demos</p>
-        <h2 class="h-l">Try it before you commit.</h2>
-        <p class="lead">
-          Live prototypes. Open either one on your phone right now and see what your crew would see.
-        </p>
-      </div>
-
-      <div class="demos">
-        <article class="demo plate plate--rivet">
-          <div class="plate-hd"><span class="lbl">Demo 01</span><span class="lbl lbl--y">Live</span></div>
-          <div class="plate-bd">
-            <h3>Ops Command</h3>
-            <p>Asset tracking, scheduling and crew dispatch in one dashboard.</p>
-            <ul>
-              <li>Real-time inventory</li>
-              <li>Broken tool history</li>
-              <li>Drag-and-drop scheduling</li>
-              <li>iPad compatible</li>
-            </ul>
-            <a class="btn btn--o" href="https://michaelai1.github.io/nextgen-ops-dashboard/" target="_blank" rel="noopener">Open demo</a>
-          </div>
-        </article>
-
-        <article class="demo plate plate--rivet">
-          <div class="plate-hd"><span class="lbl">Demo 02</span><span class="lbl lbl--y">Live</span></div>
-          <div class="plate-bd">
-            <h3>QR &amp; Text Access</h3>
-            <p>
-              One QR code on any piece of equipment, one text line for the crew. Scan or reply to
-              submit maintenance requests, transport moves, inspections, and daily forms in under
-              60 seconds.
-            </p>
-            <ul>
-              <li>No app download or login required</li>
-              <li>Submissions include photo, location, and timestamp</li>
-              <li>Everything lands in one queue for the office</li>
-            </ul>
-            <a class="btn btn--o" href="https://michaelai1.github.io/equipment-qr-demo/" target="_blank" rel="noopener">Open demo</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
   <!-- ====================================================== TEXT THREAD -->
-  <section class="sec">
+  <section class="sec sec--alt">
     <div class="wrap">
       <div class="thread-grid">
         <div>
@@ -417,6 +362,22 @@
     </div>
   </section>
 
+  <!-- =========================================================== BRIDGE -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="bridge">
+        <p class="lbl">The other half of the shop</p>
+        <h2 class="h-l">Most ToolGuard clients<br>grow into custom software.</h2>
+        <p>
+          QR codes on the equipment and daily texts to the crews get clean operational data
+          flowing within a few months. Automations, dashboards, and agents built on top of it
+          are the natural next step.
+        </p>
+        <a class="btn btn--o" href="../ai/">See Custom AI <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+  </section>
+
   <!-- ========================================================== CONTACT -->
   <section class="sec sec--alt contact-band">
     <div class="wrap">
@@ -426,7 +387,7 @@
           <span class="lbl lbl--y">Direct line</span>
         </div>
         <div class="plate-bd">
-          <h2 class="h-l">Your shop shouldn&rsquo;t find out about breakdowns from a phone call.</h2>
+          <h2 class="h-l">Every machine inspected. Every day. Without the paper chase.</h2>
           <p class="contact-lines">
             Michael Carey &middot; NextGen AI LLC<br>
             Bloomington, Indiana<br>

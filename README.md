@@ -17,8 +17,9 @@ repository and do not move `index.html` out of the root.
 | `/NEXTGENAI/toolguard/roi/` | `toolguard/roi/index.html` | ROI workbook, all four calculators. |
 | `/NEXTGENAI/ai/` | `ai/index.html` | Custom AI — the four-stage ladder. |
 
-Demos live in their own repos and are linked, not copied:
-`nextgen-ops-dashboard`, `equipment-qr-demo`.
+The demo repos (`nextgen-ops-dashboard`, `equipment-qr-demo`) are still live at
+their own GitHub Pages URLs but are no longer linked from the site — the demos
+section was cut in review. Re-linking them is just an anchor, nothing to rebuild.
 
 ---
 
