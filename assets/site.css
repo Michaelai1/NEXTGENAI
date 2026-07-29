@@ -244,7 +244,7 @@ a{ color:var(--yellow); text-underline-offset:3px; }
 .ftr{ border-top:1px solid var(--rule); background:var(--navy); }
 .ftr-in{
   max-width:var(--max); margin-inline:auto; padding:2.75rem var(--gut) 2rem;
-  display:grid; grid-template-columns:minmax(0,2fr) minmax(0,1fr) minmax(0,1fr); gap:2.5rem;
+  display:grid; grid-template-columns:minmax(0,1.7fr) repeat(3,minmax(0,1fr)); gap:2.25rem;
 }
 .ftr h3{ margin-bottom:.9rem; }
 .ftr ul{ list-style:none; padding:0; display:flex; flex-direction:column; gap:.5rem; }
@@ -324,6 +324,11 @@ a{ color:var(--yellow); text-underline-offset:3px; }
 .path:hover .path-go{ color:var(--yellow); }
 .path .plate-bd{ display:flex; flex-direction:column; gap:1rem; flex:1; padding:1.5rem 1.4rem 1.4rem; }
 .path-name{ font-family:var(--disp); font-weight:800; text-transform:uppercase; font-size:clamp(1.6rem,3vw,2rem); line-height:1; }
+/* audience first — this is what stops a visitor picking the wrong lane */
+.path-who{
+  font-family:var(--mono); font-size:.8125rem; font-weight:600; letter-spacing:.02em;
+  color:var(--yellow); margin-top:-.35rem;
+}
 .path-desc{ color:var(--grey); font-size:.9375rem; line-height:1.6; }
 .path-list{ list-style:none; padding:0; display:flex; flex-wrap:wrap; gap:.4rem; }
 .path-list li{
@@ -395,6 +400,12 @@ a{ color:var(--yellow); text-underline-offset:3px; }
 .channels{ display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:1.25rem; }
 .chan .plate-bd{ padding:1.4rem 1.3rem 1.5rem; display:flex; flex-direction:column; gap:1.1rem; }
 .chan-name{ font-family:var(--disp); font-weight:800; text-transform:uppercase; font-size:clamp(1.5rem,2.6vw,1.9rem); line-height:1; }
+/* four module plates sit 2x2 rather than 3+1 with a hole */
+.modules{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.25rem; }
+@media (max-width:760px){ .modules{ grid-template-columns:1fr; } }
+/* a lone client plate shouldn't stretch the full width */
+.clients--one{ grid-template-columns:minmax(0,520px); }
+
 .chan-top{ display:flex; justify-content:space-between; align-items:flex-start; gap:1.25rem; }
 .chan-glyph{ width:64px; height:64px; color:var(--grey-d); flex-shrink:0; }
 .chan-qr{ shape-rendering:crispEdges; }
@@ -560,15 +571,19 @@ input[type=range]::-moz-range-thumb{
 .contact-lines a:hover{ text-decoration:underline; }
 
 /* ---------- 14. RESPONSIVE ------------------------------------------------ */
-@media (max-width:860px){
-  .hero-tg-grid,.thread-grid{ grid-template-columns:1fr; }
-  .thread-grid .phone-col{ order:-1; }
+/* three nav tabs need more room than two — collapse to the hamburger sooner */
+@media (max-width:940px){
+  .tabs,.hdr-cta{ display:none; }
+  .burger{ display:flex; }
   .ftr-in{ grid-template-columns:1fr 1fr; }
 }
 
+@media (max-width:860px){
+  .hero-tg-grid,.thread-grid{ grid-template-columns:1fr; }
+  .thread-grid .phone-col{ order:-1; }
+}
+
 @media (max-width:760px){
-  .tabs,.hdr-cta{ display:none; }
-  .burger{ display:flex; }
   .ladder::before{ display:none; }          /* no rail once the rungs stack */
   .rung{ grid-template-columns:1fr; gap:1.1rem; }
   .rung-mark .plate{ position:static; }

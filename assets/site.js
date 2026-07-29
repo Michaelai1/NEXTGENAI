@@ -29,6 +29,7 @@
   var BASE = '/NEXTGENAI/';
   var NAV = [
     { id: 'toolguard', label: 'Field Operations', href: BASE + 'toolguard/', ref: 'TG' },
+    { id: 'safety',    label: 'Safety Programs',  href: BASE + 'safety/',    ref: 'SP' },
     { id: 'ai',        label: 'Custom AI',        href: BASE + 'ai/',        ref: 'AI' }
   ];
 
@@ -96,6 +97,15 @@
             '<li><a href="' + BASE + 'toolguard/#channels">QR and text intake</a></li>' +
             '<li><a href="' + BASE + 'toolguard/#safety">Safety records</a></li>' +
             '<li><a href="' + BASE + 'toolguard/roi/">ROI workbook</a></li>' +
+          '</ul>' +
+        '</div>' +
+        '<div>' +
+          '<h3 class="lbl">Safety Programs</h3>' +
+          '<ul>' +
+            '<li><a href="' + BASE + 'safety/">For safety consultants</a></li>' +
+            '<li><a href="' + BASE + 'safety/#platform">The platform</a></li>' +
+            '<li><a href="' + BASE + 'safety/#findings">Findings &amp; corrections</a></li>' +
+            '<li><a href="' + BASE + 'safety/#records">Records</a></li>' +
           '</ul>' +
         '</div>' +
         '<div>' +

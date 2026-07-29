@@ -12,10 +12,25 @@ repository and do not move `index.html` out of the root.
 
 | URL | File | What it is |
 |---|---|---|
-| `/NEXTGENAI/` | `index.html` | Home. Brand, the two paths, recent work, team, contact. |
-| `/NEXTGENAI/toolguard/` | `toolguard/index.html` | ToolGuard — field operations. |
+| `/NEXTGENAI/` | `index.html` | Home. Brand, the three paths, recent work, team, contact. |
+| `/NEXTGENAI/toolguard/` | `toolguard/index.html` | ToolGuard — field operations, for contractors. |
 | `/NEXTGENAI/toolguard/roi/` | `toolguard/roi/index.html` | ROI workbook, all four calculators. |
+| `/NEXTGENAI/safety/` | `safety/index.html` | ToolGuard — for safety consulting firms. |
 | `/NEXTGENAI/ai/` | `ai/index.html` | Custom AI — the four-stage ladder. |
+
+### The two ToolGuard pages are split on purpose
+
+`/toolguard/` sells to a **contractor** running its own crews and equipment.
+`/safety/` sells to a **safety consulting firm** running programs for other
+companies. Same product, two audiences — which is why both plate headers say
+ToolGuard and there is no second brand name anywhere.
+
+**Time tracking, invoicing, and payroll appear only on `/safety/`.** That is
+deliberate, not an oversight. Those modules work when we own the whole stack,
+which is true at a consulting firm whose consultants are the users. A contractor
+already runs a time tracker and payroll, and integrating with theirs is support
+surface we are not taking on. Do not "fix" this by adding billing to the
+contractor page.
 
 The demo repos (`nextgen-ops-dashboard`, `equipment-qr-demo`) are still live at
 their own GitHub Pages URLs but are no longer linked from the site — the demos
