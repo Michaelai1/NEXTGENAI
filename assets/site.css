@@ -111,6 +111,10 @@ a{ color:var(--yellow); text-underline-offset:3px; }
   font-family:var(--disp); font-weight:800; text-transform:uppercase;
   font-size:clamp(2.6rem,7vw,4.75rem); line-height:.9; letter-spacing:-.005em;
 }
+/* for headlines that run long — keeps them to a confident three lines
+   instead of four cramped ones in a half-width hero column */
+.h-xl--long{ font-size:clamp(2rem,4.4vw,3.4rem); }
+
 .h-l{
   font-family:var(--disp); font-weight:800; text-transform:uppercase;
   font-size:clamp(1.85rem,3.8vw,2.75rem); line-height:.98;
