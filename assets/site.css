@@ -421,6 +421,18 @@ a{ color:var(--yellow); text-underline-offset:3px; }
 /* a lone client plate shouldn't stretch the full width */
 .clients--one{ grid-template-columns:minmax(0,520px); }
 
+/* label-only cards — the header carries the whole title, so the body reads up */
+/* min-height keeps the three headers aligned when one label wraps */
+.chan--plain .plate-hd{ flex-wrap:wrap; gap:.35rem .9rem; min-height:3.75rem; }
+.chan--plain .plate-hd .lbl--y{ text-align:right; }
+.chan--plain .chan-desc{ font-size:1rem; line-height:1.65; }
+
+/* a considered aside, not fine print — this one earns being readable */
+.closing-note{
+  margin-top:1.75rem; max-width:64ch; font-size:.9375rem; line-height:1.7;
+  color:var(--grey); border-left:2px solid var(--rule-2); padding-left:1.1rem;
+}
+
 .chan-top{ display:flex; justify-content:space-between; align-items:flex-start; gap:1.25rem; }
 .chan-glyph{ width:64px; height:64px; color:var(--grey-d); flex-shrink:0; }
 .chan-qr{ shape-rendering:crispEdges; }
