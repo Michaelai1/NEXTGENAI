@@ -400,9 +400,24 @@ a{ color:var(--yellow); text-underline-offset:3px; }
 .channels{ display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:1.25rem; }
 .chan .plate-bd{ padding:1.4rem 1.3rem 1.5rem; display:flex; flex-direction:column; gap:1.1rem; }
 .chan-name{ font-family:var(--disp); font-weight:800; text-transform:uppercase; font-size:clamp(1.5rem,2.6vw,1.9rem); line-height:1; }
-/* four module plates sit 2x2 rather than 3+1 with a hole */
+/* module plates sit 2x2; the command center spans both as the capstone */
 .modules{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.25rem; }
-@media (max-width:760px){ .modules{ grid-template-columns:1fr; } }
+.module--wide{ grid-column:1/-1; }
+.module--wide .chan-list{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  flex-direction:row;
+}
+@media (max-width:760px){
+  .modules{ grid-template-columns:1fr; }
+  .module--wide .chan-list{ grid-template-columns:1fr; }
+}
+
+/* integration note — a footnote, deliberately not another plate */
+.integrates{
+  display:flex; flex-wrap:wrap; gap:.5rem .9rem; align-items:baseline;
+  margin-top:1.25rem; padding-top:1.1rem; border-top:1px solid var(--rule);
+}
+.integrates p{ flex:1; min-width:260px; font-size:.9375rem; color:var(--grey); line-height:1.6; }
 /* a lone client plate shouldn't stretch the full width */
 .clients--one{ grid-template-columns:minmax(0,520px); }
 
