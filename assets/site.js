@@ -416,6 +416,26 @@
     var mock = document.querySelector('[data-mocks]');
     if (mock) wireTablist(mock, '.mock-tab');
 
+    /* Rotating tagline on the home page. The phrases are all in the markup, so
+       with JS off (or reduced motion on) they just stack and every one reads.
+       Screen readers get all three either way — the rotation is only visual. */
+    var rot = document.querySelector('[data-rotator]');
+    if (rot) {
+      var phrases = Array.prototype.slice.call(rot.querySelectorAll('.rot-item'));
+      var still   = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      if (!still && phrases.length > 1) {
+        rot.classList.add('is-rotating');
+        phrases[0].classList.add('is-on');
+        var at = 0;
+        setInterval(function () {
+          phrases[at].classList.remove('is-on');
+          at = (at + 1) % phrases.length;
+          phrases[at].classList.add('is-on');
+        }, 2800);
+      }
+    }
+
     /* Text-thread mockup: type the conversation out in sequence when it
        scrolls in. The bubbles are hidden HERE rather than in the stylesheet,
        so with JS off — or if anything below fails — the full thread is simply
