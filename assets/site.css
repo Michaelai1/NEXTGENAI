@@ -313,7 +313,7 @@ a{ color:var(--yellow); text-underline-offset:3px; }
   text-wrap:balance;
 }
 .rot.is-rotating{ display:grid; }
-.rot.is-rotating .rot-item{ grid-area:1/1; opacity:0; transition:opacity .5s ease; }
+.rot.is-rotating .rot-item{ grid-area:1/1; opacity:0; transition:opacity .35s ease; }
 .rot.is-rotating .rot-item.is-on{ opacity:1; }
 
 /* faint drafting grid behind hero sections */

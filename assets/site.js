@@ -432,7 +432,7 @@
           phrases[at].classList.remove('is-on');
           at = (at + 1) % phrases.length;
           phrases[at].classList.add('is-on');
-        }, 2800);
+        }, 1900);
       }
     }
 
