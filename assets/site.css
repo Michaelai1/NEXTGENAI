@@ -349,13 +349,22 @@ a{ color:var(--yellow); text-underline-offset:3px; }
   font-family:var(--mono); font-size:.6875rem; letter-spacing:.06em; text-transform:uppercase;
   color:var(--grey); border:1px solid var(--rule); padding:.22rem .5rem;
 }
+/* Reads as a real button at rest, not just coloured text. The whole card is the
+   link, but on a phone there is no hover to reveal that, so the affordance has
+   to be visible before you touch it. */
 .path-go{
-  margin-top:auto; font-family:var(--mono); font-size:.75rem; font-weight:600;
-  letter-spacing:.1em; text-transform:uppercase; color:var(--grey);
-  display:flex; align-items:center; gap:.5rem; transition:color .18s;
+  margin-top:auto; display:flex; align-items:center; justify-content:center; gap:.55rem;
+  font-family:var(--mono); font-size:.8125rem; font-weight:600;
+  letter-spacing:.08em; text-transform:uppercase;
+  color:var(--yellow); border:1px solid var(--yellow);
+  padding:.75rem 1rem; margin-top:auto;
+  transition:background .18s, color .18s;
 }
 .path-go span{ display:inline-block; transition:transform .18s; }
-.path:hover .path-go span{ transform:translateX(5px); }
+.path:hover .path-go,
+.path:active .path-go,
+.path:focus-visible .path-go{ background:var(--yellow); color:var(--ink); }
+.path:hover .path-go span{ transform:translateX(4px); }
 
 /* client roster — a grid of tag plates, name first */
 .clients{ display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr)); gap:1.1rem; }
@@ -448,8 +457,7 @@ a{ color:var(--yellow); text-underline-offset:3px; }
 }
 
 /* label-only cards — the header carries the whole title, so the body reads up */
-/* min-height keeps the three headers aligned when one label wraps */
-.chan--plain .plate-hd{ flex-wrap:wrap; gap:.35rem .9rem; min-height:3.75rem; }
+.chan--plain .plate-hd{ flex-wrap:wrap; gap:.35rem .9rem; }
 .chan--plain .plate-hd .lbl--y{ text-align:right; }
 .chan--plain .chan-desc{ font-size:1rem; line-height:1.65; }
 
